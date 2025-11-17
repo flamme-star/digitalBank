@@ -1,0 +1,20 @@
+🎨 Palette en HEX
+
+Primary
+Blue 950 → #2D314D
+
+Green 500 → #31D35C
+
+Cyan 400 → #2BB7DA
+
+Neutral
+Gray 600 → #9698A6
+
+Gray 100 → #F3F4F6
+
+Gray 50 → #FAFAFA
+
+White → #FFFFFF
+
+Gradiant 
+background: linear-gradient(to left, #31D35C, #2BB7DA);

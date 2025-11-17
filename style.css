@@ -1,0 +1,180 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  padding: 18px;
+  background: #f09494;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+header ul li {
+  list-style: none;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 2px;
+  background-color: #c0f094;
+  transition: 0.4s ease-in-out;
+}
+
+li:hover::before {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+section {
+  height: 500px;
+  background-image: linear-gradient(#3335), url("allGems.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero h2 {
+  color: #fff;
+  text-align: center;
+  text-wrap: nowrap;
+  position: relative;
+  width: 25ch;
+  top: 80px;
+  overflow: hidden;
+  animation: tiping 2.5s steps(20) infinite alternate-reverse;
+}
+@keyframes tiping {
+  from {
+    width: 0ch;
+  }
+}
+article {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  position: relative;
+  background-color: #fdc7c7;
+  padding: 20px;
+  border-radius: 5px;
+}
+article div {
+  background-image: linear-gradient(#3335), url("background.jpg");
+  width: 150px;
+  height: 150px;
+  position: relative;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: -70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 8px #3338;
+}
+.link div:hover {
+  box-shadow: 0px 3px 8px #3338, 0px 0px 20px #fffb;
+  background-image: linear-gradient(#fff4), url(steven.jpg);
+  -webkit-text-fill-color: #000;
+  transform: scale(1.1);
+  transition: 0.29s ease-in-out;
+}
+.perso {
+  background-image: linear-gradient(#3335), url("grena.jpg");
+}
+.info {
+  background-image: linear-gradient(#3335), url("diamant\ Rose.jpg");
+}
+.About {
+  background-color: #fdc7c7;
+  padding: 20px;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 35px;
+}
+
+.About h2 {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.About h2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  top: 25px;
+}
+.About .box {
+  background: #fff;
+  display: flex;
+  width: 80%;
+  height: 300px;
+  overflow: auto;
+  margin: 100px;
+  justify-content: center;
+}
+.About .box img {
+  width: 200px;
+}
+
+.vid {
+  margin-top: 30px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+.vid h2 {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: underline;
+}
+
+.vid .video {
+  background: #fff;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 3px 8px #3338;
+  margin-top: 65px;
+}
+.vid .video iframe {
+  width: 35%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 8px #3338;
+}
